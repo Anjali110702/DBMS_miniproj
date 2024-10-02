@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <link rel="stylesheet" href="p1.css">
+</head>
+<body>
+    <video autoplay muted loop id="video-bg">
+        <source src="b2.mp4" type="video/mp4">
+       
+    </video>
+   
+</body>
+</html>
+
+
+<!doctype html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="p1.css" />
+    
+    
+  </head>
+  <style>
+    
+    .rectangle-12-1-456{
+      font-size:xx-large;
+    }
+  </style>
+  <body>
+    <div class="parent-div">
+      <div class="desktop--2-1-2650" id="id-922">
+        <div class="rectangle-9-1-588" id="id-294"></div>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <label for="country">Select Country:</label>
+        <select name="country" id="country" class="rectangle-10-1-1292">
+          <option value="">Select Country</option>
+          <?php
+          // Database connection
+          $servername = "localhost";
+          $username = "root";
+          $password = "";
+          $dbname = "logindb";
+
+          $conn = new mysqli($servername, $username, $password, $dbname);
+
+          if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+          }
+
+          $sql = "SELECT * FROM country";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+              while($row = $result->fetch_assoc()) {
+                  echo "<option value='".$row["cname"]."'>".$row["cname"]."</option>";
+              }
+          }
+          $conn->close();
+          ?>
+      </select><br><br>
+      <label for="orbit">Select Orbit:</label>
+        <select name="orbit" id="orbit" class="rectangle-11-1-602">
+            <option value="">Select Orbit</option>
+            <?php
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT * FROM orbit";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<option value='".$row["type_of_orbit"]."'>".$row["type_of_orbit"]."</option>";
+                }
+            }
+            $conn->close();
+            ?>
+        </select><br><br>
+
+        <label for="satellite">Select Satellite:</label>
+        <select name="satellite" id="satellite" class="rectangle-12-1-456">
+            <option value="">Select Satellite</option>
+            <?php
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT * FROM satellite";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<option value='".$row["sname"]."'>".$row["sname"]."</option>";
+                }
+            }
+            $conn->close();
+            ?>
+        </select><br><br>          
+        <div id="details-box" style="display: none;">
+          <!-- Placeholder for details -->
+      </div>
+       <input type="submit" value="Submit" class="rectangle-13-1-189">
+       <?php
+    if (isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
+     
+        $selected_country = $_POST["country"];
+        $selected_orbit = $_POST["orbit"];
+        $selected_satellite = $_POST["satellite"];
+
+        // Database connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT * FROM satellite s
+                INNER JOIN country c ON s.country_id = c.country_id
+                INNER JOIN orbit o ON s.orbit_id = o.orbit_id
+                INNER JOIN launch l ON s.launch_id=l.launch_id
+                INNER JOIN organisation org ON s.org_id=org.org_id
+                WHERE c.cname = '$selected_country'
+                AND o.type_of_orbit = '$selected_orbit'
+                AND s.sname = '$selected_satellite'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            echo "<h3>Satellite Details</h3>";
+            echo "<table>";
+            echo "<tr><th>Satellite Name</th><th>Expected Lifetime</th><th>Dry Mass</th><th>Launch Mass</th><th>Power</th><th>Official Name</th><th>Launch site</th><th>Launch date</th></tr>";
+            while($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>".$row["sname"]."</td>";
+                echo "<td>".$row["exp_lifetime"]."</td>";
+                echo "<td>".$row["dry_mass"]."</td>";
+                echo "<td>".$row["launch_mass"]."</td>";
+                echo "<td>".$row["power"]."</td>";
+                echo "<td>".$row["official_name"]."</td>";
+                echo "<td>".$row["launch_site"]."</td>";
+                echo "<td>".$row["launch_date"]."</td>";
+                // echo "<td>".$row["official_name"]."</td>";
+                // echo "<td>".$row["official_name"]."</td>";
+                // echo "<td>".$row["official_name"]."</td>";
+                // echo "<td>".$row["official_name"]."</td>";
+                // echo "<td>".$row["official_name"]."</td>";
+
+                // echo "<td>".$row["official_name"]."</td>";
+                // echo "<td>".$row["official_name"]."</td>";
+                // echo "<td>".$row["official_name"]."</td>";
+                
+                echo "</tr>";
+            }
+            }
+            echo "</table>";
+          
+            echo "<h3>Additional Details</h3>";
+            echo "<table class='additional-details'>"; // Add a class to the table
+            echo "<tr><th>Contractor</th><th>Crew</th></tr>";
+            while($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>".$row["con_name"]."</td>";
+                echo "<td>".$row["crew"]."</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
+            
+        } else {
+            echo "No results found.";
+        }
+
+        $conn->close();
+    
+    ?>
+     
+    <button onclick="toggleDetails()">Know More</button>
+<button onclick = "check()">Go Back</button>
+<script>
+  function toggleDetails() {
+      var detailsBox = document.getElementById('details-box');
+      if (detailsBox.style.display === 'none') {
+          detailsBox.style.display = 'block';
+      } else {
+          detailsBox.style.display = 'none';
+      }
+  }
+</script>
+   
+  
+   
+
+  </body>
+</html>

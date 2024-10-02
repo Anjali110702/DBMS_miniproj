@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( 225.75deg, #31d6b8ff 14%, #8074c7d6 46%, #c61ed4b2 89% ) ;
+    background-size: 100% 100%; /* Ensure background covers the entire body */
+    height: 100vh; /* Ensure the body covers the full viewport height */
+    display: flex;
+
+   
+}
+.parent-div {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .signup-1-1120 {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    border-radius: 0px 0px 0px 0px;
+    background-repeat: no-repeat;
+ 
+  }
+  .rectangle-1-1-1369 {
+    position: absolute;
+    width: 620px;
+    height: 987px;
+    top: 16px;
+    left: 374px;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    border-radius: 37px 37px 37px 37px;
+    background: linear-gradient( 225.75deg, #31d6b8ff 14%, #8074c7d6 46%, #c61ed4b2 89% ) ;
+    mix-blend-mode: linear-burn;
+  }
+  .rectangle-4-1-1785 {
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 552px;
+    left: 413px;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: x-large;
+    padding-left :15px;
+  }
+  .rectangle-7-1-3486 {
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 369px;
+    left: 413px;
+    opacity: 1;
+    z-index: 2;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: x-large;
+    padding-left :15px;
+  }
+  .rectangle-8-1-832 {
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 186px;
+    left: 411px;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: x-large;
+    padding-left :15px;
+
+
+  }
+  .rectangle-5-1-1176 {
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 735px;
+    left: 413px;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: x-large;
+    padding-left :15px;
+  }
+  .rectangle-6-1-85 {
+    position: absolute;
+    width: 279px;
+    height: 91px;
+    top: 883px;
+    left: 544px;
+    opacity: 1;
+    z-index: 8;
+    transform: rotate(0deg);
+    border: solid black ;
+    border-radius: 45.5px 45.5px 45.5px 45.5px;
+    background: linear-gradient(225.92deg, #1ecad485 0%, #c61ed4bd 99%);
+    font-size: x-large;
+    padding-left :15px;
+  }
+  .enter-your-emai-1-595 {
+    position: absolute;
+    width: 191px;
+    height: 30px;
+    top: 589px;
+    left: 443px;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .enter-your-emai-1-595-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .enter-your-last-1-2068 {
+    position: absolute;
+    width: 258px;
+    height: 30px;
+    top: 406px;
+    left: 434px;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .enter-your-last-1-2068-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .enter-your-firs-1-476 {
+    position: absolute;
+    width: 260px;
+    height: 30px;
+    top: 223px;
+    left: 433px;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .enter-your-firs-1-476-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .submit-1-336 {
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    top: 914px;
+    left: 642px;
+    opacity: 1;
+    z-index: 9;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .submit-1-336-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .enter-password-1-1080 {
+    position: absolute;
+    width: 185px;
+    height: 30px;
+    top: 771px;
+    left: 451px;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .enter-password-1-1080-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .sign-up-1-122 {
+    position: absolute;
+    width: 150px;
+    height: 34px;
+    top: 96px;
+    left: 609px;
+    opacity: 1;
+    z-index: 11;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .sign-up-1-122-0 {
+    font-size: 31px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 32px;
+    color: #ffffffff;
+  }
+  

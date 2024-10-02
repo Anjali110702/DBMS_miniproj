@@ -1,0 +1,200 @@
+body{
+    background: linear-gradient(
+        225.75deg,
+        #31d6b8ff 14%,
+        #8074c7d6 46%,
+        #c61ed4b2 89%
+      );
+      background-repeat: no-repeat;
+}
+
+
+
+
+.parent-div {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .intro--1-1141 {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    border-radius: 0px 0px 0px 0px;
+  
+  }
+  .rectangle-1-1-829 {
+    position: absolute;
+    width: 620px;
+    height: 574px;
+    top: 188px;
+    left: 412px;
+    opacity: 1;
+    z-index: 0;
+    transform: rotate(0deg);
+    border-radius: 85px 85px 85px 85px;
+    background: linear-gradient(
+      222.4deg,
+      #d9d9d9ff 0%,
+      #0d47b7ff 32%,
+      #737373ff 100%
+    );
+    mix-blend-mode: color-burn;
+  }
+  .rectangle-4-1-490 {
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 305px;
+    left: 446px;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: xx-large;
+    padding : 10px;
+  }
+  .rectangle-5-1-126 {
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 481px;
+    left: 446px;
+    opacity: 1;
+    z-index: 3;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: xx-large;
+    padding : 10px;
+  }
+  .rectangle-6-1-3360 {
+    position: absolute;
+    width: 279px;
+    height: 91px;
+    top: 648px;
+    left: 580px;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+    border-radius: 45.5px 45.5px 45.5px 45.5px;
+    background: linear-gradient(225.92deg, #1ecad485 0%, #c61ed4bd 99%);
+  }
+  .enter-your-admi-1-416 {
+    position: absolute;
+    width: 235px;
+    height: 30px;
+    top: 342px;
+    left: 476px;
+    opacity: 1;
+    z-index: 2;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .enter-your-admi-1-416-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .submit-1-840 {
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    top: 679px;
+    left: 678px;
+    opacity: 1;
+    z-index: 5;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .submit-1-840-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .enter-password-1-81 {
+    position: absolute;
+    width: 185px;
+    height: 30px;
+    top: 517px;
+    left: 484px;
+    opacity: 1;
+    z-index: 6;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .enter-password-1-81-0 {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 25px;
+    color: #000000ff;
+  }
+  
+  .admin-login-1-468 {
+    position: absolute;
+    width: 304px;
+    height: 56px;
+    top: 216px;
+    left: 568px;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+    text-align: left;
+    line-height: 0px;
+  }
+  .admin-login-1-468-0 {
+    font-size: 47px;
+    font-family: Inter;
+    font-weight: 400;
+  
+    text-decoration: none;
+    text-transform: none;
+  
+    line-height: 48px;
+    color: #ffffffff;
+  }
+  

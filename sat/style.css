@@ -1,0 +1,140 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( 225.75deg, #31d6b8ff 14%, #8074c7d6 46%, #c61ed4b2 89% ) ;
+    background-size: 100% 100%; /* Ensure background covers the entire body */
+    height: 100vh; /* Ensure the body covers the full viewport height */
+    display: flex;
+
+   
+}
+.login{
+    position: absolute;
+    width: 620px;
+    height: 574px;
+    top: 100px;
+    left: 800px;
+    opacity: 1;
+    z-index: 1;
+    transform: rotate(0deg);
+    border-radius: 0px 0px 0px 0px;
+    background: #d9d9d9ff;
+    mix-blend-mode: color-burn;
+    align-items: center;
+    border-radius: 15%;
+    
+}
+.league-spartan-login {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-size: larger;
+    font-style: normal;
+  }
+div.logins{
+    font-size: 50px;
+    position: absolute;
+    left :1035px;
+    top : 120px;
+    font-weight: bolder;
+}
+ 
+#lname{
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 170px;
+    left: 35px;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: xx-large;
+    padding-left: 15px;
+}
+#pass{
+    position: absolute;
+    width: 547px;
+    height: 103px;
+    top: 300px;
+    left: 35px;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(0deg);
+    border-radius: 30px 30px 30px 30px;
+    background: #d9d9d9ff;
+    box-sizing: border-box;
+    border-left: 2px solid #000000ff;
+    border-right: 2px solid #000000ff;
+    border-top: 2px solid #000000ff;
+    border-bottom: 2px solid #000000ff;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: xx-large;
+    padding-left: 15px;
+}
+#submit{
+    position: absolute;
+    width: 279px;
+    height: 91px;
+    top: 430px;
+    left: 180px;
+    opacity: 1;
+    z-index: 7;
+    transform: rotate(0deg);
+    border-radius: 45.5px 45.5px 45.5px 45.5px;
+    background: linear-gradient(225.92deg, #1ecad485 0%, #c61ed4bd 99%);
+    font-size: xx-large;
+    
+  }
+.text{
+    width : 650px;
+    height: 85px;
+    position: absolute;
+    top: 360px;
+    left : 51px;
+
+
+}
+
+
+.playfair-display-te {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: x-large;
+}
+
+.font{
+    width : 650px;
+    height: 85px;
+    position: absolute;
+    top: 360px;
+    left : 51px;
+
+}
+
+
+.playfair-display-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  font-size :150px  ;
+  padding-left : 35px;
+}
+#sign{
+    position: absolute;
+    top: 530px;
+    left: 230px;
+    font-size: x-large;
+    text-decoration-line: none;
+    color :black
+}
